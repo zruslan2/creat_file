@@ -7,7 +7,8 @@ using namespace std;
 void main()
 {
 	srand(time(NULL));
-	ofstream f("c:\mas.txt");
+	char path[] = "E:\\mas.txt";
+	ofstream f(path);
 	for (int i = 0; i < 10000; i++)
 	{
 		f << 1 + rand() % 1000 <<endl;
